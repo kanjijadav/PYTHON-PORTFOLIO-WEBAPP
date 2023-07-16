@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanji Jadav - Certifications</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/certifications">Certifications</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/responsibilities">Responsibilities</a></li>
+            <li><a href="/test_scores">Test Scores</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="certifications">
+            <header>
+                <h1>Certifications</h1>
+            </header>
+            
+            <div class="certification">
+                <h2>AWS Certified Solutions Architect - Associate (SAA-C03)</h2>
+                <div class="certification-info">
+                    <p>Issue Date: January 1, 2023</p>
+                    <p>Expiry Date: December 31, 2025</p>
+                </div>
+                <div class="certification-badge">
+                    <img src="{{ url_for('static', filename='Untitled.png') }}" alt="AWS Cloud Practitioner">
+                </div>
+            </div>
+          
+            <div class="certification">
+                <h2>AWS Cloud Quest: Cloud Practitioner</h2>
+                <div class="certification-info">
+                    <p>Issue Date: January 1, 2023</p>
+                    <p>Expiry Date: December 31, 2025</p>
+                </div>
+                <div class="certification-badge">
+                    <img src="{{ url_for('static', filename='Untitled.png') }}" alt="AWS Cloud Practitioner">
+                </div>
+            </div>
+            
+            <!-- Add more certifications here -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Kanji Jadav</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanji Jadav - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        function changeColorScheme() {
+            var body = document.getElementsByTagName("body")[0];
+            body.classList.toggle("dark-mode");
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Kanji Jadav's Portfolio</h1>
+        <button onclick="changeColorScheme()">Change Color Scheme</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="responsibilities.html">Responsibilities</a></li>
+            <li><a href="test_scores.html">Test Scores</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Your content goes here -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Kanji Jadav</p>
+    </footer>
+    <div class="scroll-buttons">
+        <button class="scroll-up" onclick="scrollToTop()">&uarr;</button>
+        <button class="scroll-down" onclick="scrollToBottom()">&darr;</button>
+    </div>
+</body>
+</html>
